@@ -7,16 +7,27 @@ h1 {
 // display: block;
 // background: navy;
 // max-width: 100%;
-
+padding: 10vmin 1vmin;
   // background: tan;
+  display: block;
+  margin: auto;
+
+  // background: blue;
   svg {
+    // background: lightblue;
     // position: absolute;
-    // display: block;
+    display: block;
+    margin: auto;
     // width="100%" height="100%" viewBox="0 0 730 1079" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
- 
+    // margin: 0;
+    padding: 0;
     width: 100%;
     height: 100%;
     max-height: 100vmin;
+    max-width: 50vmin;
+    // margin: 2em;
+    padding: 2em;
+// border: 2px solid red;
     // fill: linear-gradient(var(--grad), var(--gold), var(--light-gold));
     // fill: var(--gold);
   }
