@@ -37,7 +37,7 @@ padding: 10vmin 1vmin;
   }
   #Lower-Letters{
     fill: white;
-    @media only screen and (max-width: 400px) {
+    @media only screen and (max-width: 250px) {
         display: none;
     }
     // background: red;
@@ -58,4 +58,7 @@ body {
   $light-gold: var(--light-gold);
   background: linear-gradient(var(--grad), var(--dark-green), var(--medium-green));
 
+}
+html {
+  background: var(--dark-green);
 }

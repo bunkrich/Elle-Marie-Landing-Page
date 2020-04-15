@@ -24,7 +24,7 @@ h1 {
   fill: white;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 250px) {
   #svg-logo #Lower-Letters {
     display: none;
   }
@@ -39,5 +39,9 @@ body {
   --gold: black;
   background: -webkit-gradient(linear, left top, left bottom, from(var(--grad)), color-stop(var(--dark-green)), to(var(--medium-green)));
   background: linear-gradient(var(--grad), var(--dark-green), var(--medium-green));
+}
+
+html {
+  background: var(--dark-green);
 }
 /*# sourceMappingURL=home.css.map */
