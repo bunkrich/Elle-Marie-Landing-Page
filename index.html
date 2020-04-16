@@ -42,8 +42,7 @@
     </defs> -->
     
     <defs>  
-      <linearGradient id="myGradient" x1="40%" y1=10%" x2="40%" y2="70%" gradientUnits="userSpaceOnUse"> 
-          
+      <!-- <linearGradient id="myGradient" x1="40%" y1=10%" x2="40%" y2="70%" gradientUnits="userSpaceOnUse"> 
           <stop offset="20%" stop-color="#FFE459">
               <animate attributeName="stop-color" values="#FFE459; #FFF6C3; white; #FFE459" dur="4s" repeatCount="indefinite"></animate>
           </stop>
@@ -53,13 +52,26 @@
           <stop offset="100%" stop-color="#FFF6C3">
               <animate attributeName="stop-color" values="white; #FFF6C3; #FFE459; white" dur="4s" repeatCount="indefinite"></animate>
           </stop>
+      </linearGradient>  -->
 
-      </linearGradient> 
+
+      <linearGradient id="gold" x1="40%" y1=10%" x2="40%" y2="70%" gradientUnits="userSpaceOnUse"> 
+        <stop offset="20%" stop-color="#FFE459">
+            <animate attributeName="stop-color" values="white; #e6bb2f;  white" dur="4s" repeatCount="indefinite"></animate>
+        </stop>
+        <stop offset="60%" stop-color="#red">
+          <animate attributeName="stop-color" values="#e6bb2f; #9e6305; #e6bb2f" dur="4s" repeatCount="indefinite"></animate>
+      </stop>
+        <stop offset="100%" stop-color="#FFF6C3">
+            <animate attributeName="stop-color" values="#fafb9d; #e6bb2f;  #fafb9d" dur="4s" repeatCount="indefinite"></animate>
+        </stop>
+    </linearGradient> 
+
 
   </defs>
     <g transform="matrix(1,0,0,1,-38.8251,-33.9265)">
         <g id="Elle-Marie" serif:id="Elle Marie">
-            <g id="Logo-Letters" serif:id="Logo Letters" transform="matrix(1,0,0,1,-79.0382,-208.848)" fill="url('#myGradient')">
+            <g id="Logo-Letters" serif:id="Logo Letters" transform="matrix(1,0,0,1,-79.0382,-208.848)" fill="url('#gold')">
                 <g id="slash" transform="matrix(0.82319,0.216728,-0.722563,2.74449,867.022,-2033.42)">
                     <path d="M575.909,901.273L570.316,901.719L570.935,1151.87L576.171,1151.48L575.909,901.273Z"/>
                 </g>
