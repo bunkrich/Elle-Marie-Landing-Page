@@ -31,6 +31,7 @@ h1 {
 }
 
 body {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   --dark-green: #23373C;
   --medium-green: #384B4E;
   --gold: #FFE459;
