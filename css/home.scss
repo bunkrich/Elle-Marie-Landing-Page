@@ -48,6 +48,8 @@ padding: 10vmin 1vmin;
 
 body {
   // background: green;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+  color: white;
   --dark-green: #23373C;
   --medium-green: #384B4E;
   --gold: #FFE459;
@@ -61,4 +63,39 @@ body {
 }
 html {
   background: var(--dark-green);
+}
+
+#main-menu {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0;
+  padding: 0;
+  border: 1px red solid;
+  ul {
+    border: 1px yellow solid;
+    display: grid;
+    // grid-template-columns: min-content;
+    // grid-template-rows: min-content;
+    grid-auto-flow: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  li {
+    border: 1px black solid;
+  }
+  }
+  li a {
+    border: 1px pink solid;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
 }

@@ -1,6 +1,6 @@
 h1 {
-  background: green;
-  color: white;
+  background: yellow;
+  color: red;
 }
 
 #svg-logo {
@@ -31,6 +31,8 @@ h1 {
 }
 
 body {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: white;
   --dark-green: #23373C;
   --medium-green: #384B4E;
   --gold: #FFE459;
@@ -43,5 +45,43 @@ body {
 
 html {
   background: var(--dark-green);
+}
+
+#main-menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  margin: 0;
+  padding: 0;
+  border: 1px red solid;
+}
+
+#main-menu ul {
+  border: 1px yellow solid;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#main-menu ul li {
+  border: 1px black solid;
+}
+
+#main-menu li a {
+  border: 1px pink solid;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none;
+}
+
+#main-menu li a:hover {
+  background-color: #111111;
 }
 /*# sourceMappingURL=home.css.map */
