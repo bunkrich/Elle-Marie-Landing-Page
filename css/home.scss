@@ -1,7 +1,4 @@
-h1 {
-  background: yellow;
-  color: red;
-}
+
 
 #svg-logo {
   // display: block;
@@ -32,7 +29,7 @@ h1 {
     // fill: var(--gold);
   }
 
-  #Logo-Letters {}
+  // #Logo-Letters {}
 
   #Lower-Letters {
     fill: white;
@@ -58,10 +55,13 @@ body {
   color: white;
   --dark-green: #23373C;
   --medium-green: #384B4E;
-  --gold: #FFE459;
-  --light-gold: #FFF6C3;
+  // --gold: #FFE459;
+  --white-gold: #FFF6C3;
+  --light-gold: #fafb9d;
+  --med-gold: #e6bb2f;
+  --dark-gold: #9e6305;
   --grad: 270deg;
-  --gold: black;
+  // --gold: black;
   $gold: var(--gold);
   $light-gold: var(--light-gold);
   background: linear-gradient(var(--grad), var(--dark-green), var(--medium-green));
@@ -75,43 +75,68 @@ body {
 
 #main-menu,
 #about {
-  display: grid;
-  grid-template-columns: auto;
   margin: 0;
   padding: 0;
-  border: 1px red solid;
   font-style: normal;
+
 
   h1 {
     display: none;
   }
 
   ul {
-    border: 1px yellow solid;
-    display: grid;
-    // grid-template-columns: min-content;
-    // grid-template-rows: min-content;
-    grid-auto-flow: column;
+    font-size: .8em;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+  
+    grid-gap: 1em;
     li {
-      border: 1px black solid;
+      align-content: space-evenly;
+      display: grid;
     }
   }
 
   li a {
-    border: 1px pink solid;
     display: block;
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 1em 1em;
     text-decoration: none;
+    transition: 0.3s;
   }
 
   li a:hover {
-    background-color: #111111;
+    background-color: var(--med-gold);
+    color: var(--dark-gold);
   }
 }
+
+  @media only screen and (max-width: 500px) {
+    #about ul {
+       grid-auto-flow: row;
+       grid-gap: 0;
+  }
+
+}
+
+
+
+// #main-menu,
+// #about {
+//   border: 1px red solid;
+
+//   ul {
+//     border: 1px yellow solid;
+  
+//     li {
+
+//       border: 1px black solid;
+
+// a {
+//     border: 1px pink solid;
+// }}}}

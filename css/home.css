@@ -1,8 +1,3 @@
-h1 {
-  background: yellow;
-  color: red;
-}
-
 #svg-logo {
   padding: 10vmin 1vmin;
   display: block;
@@ -42,10 +37,11 @@ body {
   color: white;
   --dark-green: #23373C;
   --medium-green: #384B4E;
-  --gold: #FFE459;
-  --light-gold: #FFF6C3;
+  --white-gold: #FFF6C3;
+  --light-gold: #fafb9d;
+  --med-gold: #e6bb2f;
+  --dark-gold: #9e6305;
   --grad: 270deg;
-  --gold: black;
   background: -webkit-gradient(linear, left top, left bottom, from(var(--grad)), color-stop(var(--dark-green)), to(var(--medium-green)));
   background: linear-gradient(var(--grad), var(--dark-green), var(--medium-green));
   display: -ms-grid;
@@ -60,13 +56,8 @@ body {
 
 #main-menu,
 #about {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
   margin: 0;
   padding: 0;
-  border: 1px red solid;
   font-style: normal;
 }
 
@@ -77,33 +68,49 @@ body {
 
 #main-menu ul,
 #about ul {
-  border: 1px yellow solid;
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
+  font-size: .8em;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 1em;
 }
 
 #main-menu ul li,
 #about ul li {
-  border: 1px black solid;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  display: -ms-grid;
+  display: grid;
 }
 
 #main-menu li a,
 #about li a {
-  border: 1px pink solid;
   display: block;
   color: white;
   text-align: center;
-  padding: 1em;
+  padding: 1em 1em;
   text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #main-menu li a:hover,
 #about li a:hover {
-  background-color: #111111;
+  background-color: var(--med-gold);
+  color: var(--dark-gold);
+}
+
+@media only screen and (max-width: 500px) {
+  #about ul {
+    grid-auto-flow: row;
+    grid-gap: 0;
+  }
 }
 /*# sourceMappingURL=home.css.map */

@@ -1,0 +1,44 @@
+
+main{
+    // display: grid;
+//   background: blue;
+//   padding: 1em;
+  margin: 1em auto;
+    // align-content: center;
+    // justify-content: center;
+}
+    #contact-form{
+    // background: red;
+    max-width: 800px;
+color: white;
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid var(--medium-green);
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=submit] {
+        background-color: var(--light-gold);
+        transition: .3s;
+        color: var(--dark-gold);
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+        background-color: var(--med-gold);
+      }
+      
+      .container {
+        border-radius: 5px;
+        background-color: var(--dark-green);
+        padding: 20px;
+      }
+}
