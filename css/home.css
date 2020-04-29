@@ -30,8 +30,15 @@ h1 {
   }
 }
 
+html,
 body {
-  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  background: var(--dark-green);
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   color: white;
   --dark-green: #23373C;
   --medium-green: #384B4E;
@@ -41,13 +48,18 @@ body {
   --gold: black;
   background: -webkit-gradient(linear, left top, left bottom, from(var(--grad)), color-stop(var(--dark-green)), to(var(--medium-green)));
   background: linear-gradient(var(--grad), var(--dark-green), var(--medium-green));
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  width: 100%;
+  height: 100%;
 }
 
-html {
-  background: var(--dark-green);
-}
-
-#main-menu {
+#main-menu,
+#about {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto;
@@ -55,9 +67,16 @@ html {
   margin: 0;
   padding: 0;
   border: 1px red solid;
+  font-style: normal;
 }
 
-#main-menu ul {
+#main-menu h1,
+#about h1 {
+  display: none;
+}
+
+#main-menu ul,
+#about ul {
   border: 1px yellow solid;
   display: -ms-grid;
   display: grid;
@@ -68,11 +87,13 @@ html {
   overflow: hidden;
 }
 
-#main-menu ul li {
+#main-menu ul li,
+#about ul li {
   border: 1px black solid;
 }
 
-#main-menu li a {
+#main-menu li a,
+#about li a {
   border: 1px pink solid;
   display: block;
   color: white;
@@ -81,7 +102,8 @@ html {
   text-decoration: none;
 }
 
-#main-menu li a:hover {
+#main-menu li a:hover,
+#about li a:hover {
   background-color: #111111;
 }
 /*# sourceMappingURL=home.css.map */
