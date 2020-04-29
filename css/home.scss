@@ -62,3 +62,38 @@ body {
 html {
   background: var(--dark-green);
 }
+
+#main-menu {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0;
+  padding: 0;
+  border: 1px red solid;
+  ul {
+    border: 1px yellow solid;
+    display: grid;
+    // grid-template-columns: min-content;
+    // grid-template-rows: min-content;
+    grid-auto-flow: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+  li {
+    border: 1px black solid;
+  }
+  }
+  li a {
+    border: 1px pink solid;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+}
