@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Elle Marie</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="stylesheet" href="css/contact.css">
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <menu id="main-menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </menu>
+<main id="contact-form">
+    
+    <div class="container">
+        <h1>Contact</h1>
+        <form action="action_page.php">
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+      
+</main>
+    <address id="about">
+        <div itemscope itemtype="http://schema.org/LocalBusiness">
+            <h1 itemprop="name">Elle Marie Interiors</h1>
+            <ul>
+                <li><span itemprop="url"><a href="https://www.ellemarieinteriors.com/#home">ellemarieinteriors.com</a></li>
+                <li><span itemprop="Address"><a href="https://goo.gl/maps/XKfNxreZN7DaJRg97">South Barrington, IL</a></span></li>
+                <li><span itemprop="telephone"><a href="tel:1-217-556-2147">(217) 556-2147</a></span></li>
+            </ul>
+        </div>
+        <div>
+        </div>
+    </address>
+
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+    </script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

@@ -10,16 +10,17 @@
     <link rel="apple-touch-icon" href="icon.png">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
+
     <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
     <menu id="main-menu">
         <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/#portfolio">Portfolio</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/contact.html">Contact</a></li>
         </ul>
     </menu>
     <div id="svg-logo">
@@ -183,13 +184,19 @@
         </svg>
 
     </div>
-<footer id="about">
-    <div>
-        ellemarieinteriors.com
-        (217) 556-2147
-        South Barrington, IL
-    </div>
-</footer>
+    <address id="about">
+        <div itemscope itemtype="http://schema.org/LocalBusiness">
+            <h1 itemprop="name">Elle Marie Interiors</h1>
+            <ul>
+                <li><span itemprop="url"><a href="https://www.ellemarieinteriors.com/#home">ellemarieinteriors.com</a></li>
+                <li><span itemprop="Address"><a href="https://goo.gl/maps/XKfNxreZN7DaJRg97">South Barrington, IL</a></span></li>
+                <li><span itemprop="telephone"><a href="tel:1-217-556-2147">(217) 556-2147</a></span></li>
+            </ul>
+        </div>
+        <div>
+        </div>
+    </address>
+
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
