@@ -7,7 +7,11 @@ main {
   color: white;
 }
 
-#contact-form input[type=text], #contact-form select, #contact-form textarea {
+#contact-form input[type=text],
+#contact-form input[type=email],
+#contact-form input[type=tel],
+#contact-form select,
+#contact-form textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid var(--medium-green);
@@ -17,6 +21,10 @@ main {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+#contact-form textarea {
+  min-height: 20vh;
 }
 
 #contact-form input[type=submit] {
