@@ -1,3 +1,35 @@
+:root {
+  --dark-green: #23373C;
+  --medium-green: #384B4E;
+  --white-gold: #FFF6C3;
+  --light-gold: #fafb9d;
+  --med-gold: #e6bb2f;
+  --dark-gold: #9e6305;
+  --grad: 270deg;
+}
+
+html,
+body {
+  background: var(--dark-green);
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--grad)), color-stop(var(--dark-green)), to(var(--medium-green)));
+  background: linear-gradient(var(--grad), var(--dark-green), var(--medium-green));
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  width: 100%;
+  height: 100%;
+}
+
 #svg-logo {
   padding: 10vmin 1vmin;
   display: block;
@@ -23,35 +55,6 @@
   #svg-logo #Lower-Letters {
     display: none;
   }
-}
-
-html,
-body {
-  background: var(--dark-green);
-  width: 100%;
-  height: 100%;
-}
-
-body {
-  font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
-  color: white;
-  --dark-green: #23373C;
-  --medium-green: #384B4E;
-  --white-gold: #FFF6C3;
-  --light-gold: #fafb9d;
-  --med-gold: #e6bb2f;
-  --dark-gold: #9e6305;
-  --grad: 270deg;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--grad)), color-stop(var(--dark-green)), to(var(--medium-green)));
-  background: linear-gradient(var(--grad), var(--dark-green), var(--medium-green));
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: auto 1fr auto;
-      grid-template-rows: auto 1fr auto;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  width: 100%;
-  height: 100%;
 }
 
 #main-menu,
