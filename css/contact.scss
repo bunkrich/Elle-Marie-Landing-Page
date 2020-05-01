@@ -1,14 +1,8 @@
 main {
-  // display: grid;
-  //   background: blue;
-  //   padding: 1em;
   margin: 1em auto;
-  // align-content: center;
-  // justify-content: center;
 }
 
 #contact-form {
-  // background: red;
   max-width: 800px;
   color: white;
 
@@ -26,9 +20,11 @@ main {
     margin-bottom: 16px;
     resize: vertical;
   }
+
   textarea {
-min-height: 20vh;
+    min-height: 20vh;
   }
+
   input[type=submit] {
     background-color: var(--light-gold);
     transition: .3s;
