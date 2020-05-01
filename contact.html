@@ -6,12 +6,17 @@
     <title>Elle Marie</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#384b4e">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
+    
     <link rel="stylesheet" href="css/contact.css">
-    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
@@ -27,7 +32,7 @@
 
         <div class="container">
             <h1>Contact</h1>
-            <form id="my-form" action="/success" name="contact" method="POST" data-netlify="true">
+            <form id="contact-form" action="/success" name="contact" method="POST" data-netlify="true">
                 <label>Name: <input type="text" name="name" /></label>
                 <label>Email: <input type="email" name="email" /></label>
                 <label>Phone: <input type="tel" name="phone" /></label>
@@ -53,7 +58,7 @@
         </div>
     </address>
     <script>
-        $("#my-form").submit(function (e) {
+        $("#contact-form").submit(function (e) {
             e.preventDefault();
             var $form = $(this);
             $.post($form.attr("action"), $form.serialize()).then(function () {
