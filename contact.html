@@ -24,14 +24,20 @@
 </head>
 
 <body>
-    <menu id="main-menu">
-        <ul>
-            <li><a href="/">Home</a></li>
-            <!-- <li><a href="/#portfolio">Portfolio</a></li> -->
-            <li><a href="/#about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </menu>
+    <nav id="main-nav" role="navigation">
+        <!-- <div id="menuToggle">
+            <input id="nav-checkbox" type="checkbox" />
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span> -->
+            <ul id="menu">
+                <li><a href="/">Home</a></li>
+                <!-- <li><a href="/#portfolio">Portfolio</a></li> -->
+                <li><a href="/#about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        <!-- </div> -->
+    </nav>
     <main id="contact-form">
 
         <div class="container">
@@ -62,13 +68,13 @@
         </div>
     </address>
     <script>
-        $("#contact-form").submit(function (e) {
-            e.preventDefault();
-            var $form = $(this);
-            $.post($form.attr("action"), $form.serialize()).then(function () {
-                alert("Thank you!");
-            });
-        });
+        // $("#contact-form").submit(function (e) {
+        //     e.preventDefault();
+        //     var $form = $(this);
+        //     $.post($form.attr("action"), $form.serialize()).then(function () {
+        //         alert("Thank you!");
+        //     });
+        // });
     </script>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
