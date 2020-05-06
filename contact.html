@@ -19,13 +19,14 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/home.css">
-    
+
     <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
-    <nav id="main-nav" role="navigation">
-        <!-- <div id="menuToggle">
+    <main id="main-content">
+        <nav id="main-nav" role="navigation">
+            <!-- <div id="menuToggle">
             <input id="nav-checkbox" type="checkbox" />
             <span class="burger-line"></span>
             <span class="burger-line"></span>
@@ -36,46 +37,39 @@
                 <li><a href="/#about">About</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
-        <!-- </div> -->
-    </nav>
-    <main id="contact-form">
+            <!-- </div> -->
+        </nav>
+        <section>
 
-        <div class="container">
-            <h1>Contact</h1>
-            <form id="contact-form" action="/success" name="contact" method="POST" data-netlify="true">
-                <label>Name: <input type="text" name="name" /></label>
-                <label>Email: <input type="email" name="email" /></label>
-                <label>Phone: <input type="tel" name="phone" /></label>
-                <label>Message: <textarea name="message"></textarea></label>
-                <input type="submit" value="Submit">
-            </form>
+            <div class="container">
+                <h1>Contact</h1>
+                <form id="contact-form" action="/success" name="contact" method="POST" data-netlify="true">
+                    <label>Name: <input type="text" name="name" /></label>
+                    <label>Email: <input type="email" name="email" /></label>
+                    <label>Phone: <input type="tel" name="phone" /></label>
+                    <label>Message: <textarea name="message"></textarea></label>
+                    <input type="submit" value="Submit">
+                </form>
 
-        </div>
+            </div>
 
+        </section>
+        <address id="about">
+            <div itemscope itemtype="http://schema.org/LocalBusiness">
+                <h1 itemprop="name">Elle Marie Interiors</h1>
+                <ul>
+                    <li><span itemprop="url"><a
+                                href="https://www.ellemarieinteriors.com/#home">ellemarieinteriors.com</a>
+                    </li>
+                    <li><span itemprop="Address"><a href="https://goo.gl/maps/XKfNxreZN7DaJRg97">South Barrington,
+                                IL</a></span></li>
+                    <li><span itemprop="telephone"><a href="tel:1-217-556-2147">(217) 556-2147</a></span></li>
+                </ul>
+            </div>
+            <div>
+            </div>
+        </address>
     </main>
-    <address id="about">
-        <div itemscope itemtype="http://schema.org/LocalBusiness">
-            <h1 itemprop="name">Elle Marie Interiors</h1>
-            <ul>
-                <li><span itemprop="url"><a href="https://www.ellemarieinteriors.com/#home">ellemarieinteriors.com</a>
-                </li>
-                <li><span itemprop="Address"><a href="https://goo.gl/maps/XKfNxreZN7DaJRg97">South Barrington,
-                            IL</a></span></li>
-                <li><span itemprop="telephone"><a href="tel:1-217-556-2147">(217) 556-2147</a></span></li>
-            </ul>
-        </div>
-        <div>
-        </div>
-    </address>
-    <script>
-        // $("#contact-form").submit(function (e) {
-        //     e.preventDefault();
-        //     var $form = $(this);
-        //     $.post($form.attr("action"), $form.serialize()).then(function () {
-        //         alert("Thank you!");
-        //     });
-        // });
-    </script>
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>

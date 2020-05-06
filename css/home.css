@@ -28,6 +28,8 @@ body {
       grid-template-rows: auto 1fr auto;
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--grad)), color-stop(0%, var(--dark-green)), color-stop(60%, var(--medium-green)), color-stop(85%, var(--dark-green)));
+  background: linear-gradient(var(--grad), var(--dark-green) 0%, var(--medium-green) 60%, var(--dark-green) 85%);
   min-height: 100%;
 }
 
