@@ -46,7 +46,7 @@ section {
   background-color: var(--med-gold);
 }
 
-#contact-form .container, #success .container {
+.container {
   border-radius: 5px;
   background-color: var(--dark-green);
   padding: 20px;
