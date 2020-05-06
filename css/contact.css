@@ -1,8 +1,8 @@
-main {
+section {
   margin: 1em auto;
 }
 
-#contact-form {
+#contact-form, #success {
   max-width: 800px;
   color: white;
 }
@@ -11,7 +11,11 @@ main {
 #contact-form input[type=email],
 #contact-form input[type=tel],
 #contact-form select,
-#contact-form textarea {
+#contact-form textarea, #success input[type=text],
+#success input[type=email],
+#success input[type=tel],
+#success select,
+#success textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid var(--medium-green);
@@ -23,11 +27,11 @@ main {
   resize: vertical;
 }
 
-#contact-form textarea {
+#contact-form textarea, #success textarea {
   min-height: 20vh;
 }
 
-#contact-form input[type=submit] {
+#contact-form input[type=submit], #success input[type=submit] {
   background-color: var(--light-gold);
   -webkit-transition: .3s;
   transition: .3s;
@@ -38,11 +42,11 @@ main {
   cursor: pointer;
 }
 
-#contact-form input[type=submit]:hover {
+#contact-form input[type=submit]:hover, #success input[type=submit]:hover {
   background-color: var(--med-gold);
 }
 
-#contact-form .container {
+#contact-form .container, #success .container {
   border-radius: 5px;
   background-color: var(--dark-green);
   padding: 20px;
