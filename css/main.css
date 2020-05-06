@@ -737,7 +737,8 @@ body {
   }
 }
 
-#contact, #contact .container {
+#contact,
+#contact .container {
   display: none;
 }
 
@@ -750,7 +751,6 @@ body {
   display: grid;
   -ms-flex-line-pack: center;
       align-content: center;
-  border: 1px solid red;
   height: 100%;
   min-height: 90vh;
   padding: 1em 5vw;
