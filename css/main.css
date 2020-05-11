@@ -723,7 +723,7 @@ body {
   transition: opacity 2s;
 }
 
-#about:target ul {
+#about:target ul, #about:hover ul {
   opacity: 1;
 }
 
