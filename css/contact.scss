@@ -2,7 +2,8 @@ section {
   margin: 1em auto;
 }
 
-#contact-form, #success {
+#contact-form,
+#success {
   max-width: 800px;
   color: white;
 
@@ -39,10 +40,9 @@ section {
     background-color: var(--med-gold);
   }
 
-
 }
+
 .container {
   border-radius: 5px;
-  // background-color: var(--dark-green);
   padding: 20px;
 }
